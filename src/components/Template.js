@@ -13,6 +13,7 @@ export default function Template(props) {
         <Col sm className='text'>
           <h4>{props.title}</h4>
           <p>{props.text}</p>
+          {props.other}
         </Col>
       </Row>
     </Container>

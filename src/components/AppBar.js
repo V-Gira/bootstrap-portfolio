@@ -1,9 +1,8 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
 import { LinkContainer } from 'react-router-bootstrap';
 
-export default function AppBar(props) {
+export default function AppBar() {
   return (
     <Navbar bg='light' variant='light'>
       <Navbar.Brand className='flex-grow-1'></Navbar.Brand>
@@ -12,12 +11,16 @@ export default function AppBar(props) {
           <Nav.Link eventKey='/'>Home</Nav.Link>
         </LinkContainer>
 
-        <LinkContainer to='/features'>
-          <Nav.Link eventKey='/features'>Features</Nav.Link>
+        <LinkContainer to='/roots'>
+          <Nav.Link eventKey='/roots'>Roots</Nav.Link>
         </LinkContainer>
 
-        <LinkContainer to='/pricing'>
-          <Nav.Link eventKey='/pricing'>Pricing</Nav.Link>
+        <LinkContainer to='/growth'>
+          <Nav.Link eventKey='/growth'>Growth</Nav.Link>
+        </LinkContainer>
+
+        <LinkContainer to='/mycelium'>
+          <Nav.Link eventKey='/mycelium'>Mycelium</Nav.Link>
         </LinkContainer>
       </Nav>
     </Navbar>

@@ -3,6 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AppBar from './components/AppBar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Home';
+import Roots from './Roots';
+import Growth from './Growth';
+import Mycelium from './Mycelium';
 
 function App() {
   return (
@@ -13,8 +16,15 @@ function App() {
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route path='/features'>ghhgh</Route>
-          <Route path='/pricing'>fghhf</Route>
+          <Route path='/roots'>
+            <Roots />
+          </Route>
+          <Route path='/growth'>
+            <Growth />
+          </Route>
+          <Route path='/mycelium'>
+            <Mycelium />
+          </Route>
         </Switch>
       </Router>
     </div>
